@@ -2,7 +2,9 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import "./AppStyles.css";
 import NavBar from "./components/NavBar";
-import { BrowserRouter as Router, Routes } from "react-router";
+import { BrowserRouter as Router, Routes, Route } from "react-router";
+import SignupForm from "./components/SignupForm";
+import Logout from "./components/Logout";
 
 const App = () => {
   return (
@@ -12,7 +14,10 @@ const App = () => {
         <h1>Hello React!</h1>
         <img className="react-logo" src="/react-logo.svg" alt="React Logo" />
 
-        <Routes>{/* Currently, we don't have any routes defined */}</Routes>
+        <Routes>
+          <Route path="/signup" element={<SignupForm />} />
+          <Route path="/logout" element={<Logout />} />
+        </Routes>
       </div>
     </div>
   );

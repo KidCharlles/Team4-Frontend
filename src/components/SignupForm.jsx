@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 
 function SignupForm() {
@@ -9,7 +10,7 @@ function SignupForm() {
         e.preventDefault();
 
         try{
-            const res = await fetch("/auth/signup", {
+            const res = await fetch("http://localhost:8080/auth/signup", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
