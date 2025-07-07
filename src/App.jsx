@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import SignupForm from "./components/SignupForm";
 import Logout from "./components/Logout";
+import Login from "./components/Login";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Routes>
           <Route path="/signup" element={<SignupForm />} />
           <Route path="/logout" element={<Logout />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
     </div>
