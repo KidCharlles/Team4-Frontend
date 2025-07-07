@@ -2,13 +2,12 @@ import React from "react";
 import "./NavBarStyles.css";
 import { Link } from "react-router";
 
-const NavBar = () => {
+const authenticatedNavBar = () => {
   return (
     <div>
       <ul>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/">Login</Link></li>
-        <li><Link to="/">Sign Up</Link></li>
+        <li><Link to="/">Logout</Link></li>
       </ul>
     </div>
    
